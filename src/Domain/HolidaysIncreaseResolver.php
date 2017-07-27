@@ -19,8 +19,14 @@ class HolidaysIncreaseResolver
     public function __construct()
     {
         $this->holidays = [
+            //Zone A
             ['startDate' => new \DateTime('21-10-2017'), 'endDate' => new \DateTime('06-11-2017')],
             ['startDate' =>new \DateTime('21-12-2017'), 'endDate' => new \DateTime('08-01-2018')],
+            //Zone B
+            ['startDate' =>new \DateTime('20-12-2017'), 'endDate' => new \DateTime('05-01-2018')],
+            ['startDate' =>new \DateTime('22-12-2017'), 'endDate' => new \DateTime('07-01-2018')],
+            //Zone C
+            ['startDate' =>new \DateTime('23-12-2017'), 'endDate' => new \DateTime('08-01-2018')],
         ];
     }
 
