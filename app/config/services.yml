@@ -1,0 +1,13 @@
+services:
+    src.ui.action.input_action:
+        class: Ui\Action\InputAction
+        arguments:
+            - '@templating'
+            - '@form.factory'
+            - '@tactician.commandbus'
+            - '@router'
+
+    application.command.input_command_handler:
+        class: Application\Command\InputCommandHandler
+        tags:
+            - { name: tactician.handler, command: Application\Command\InputCommand }

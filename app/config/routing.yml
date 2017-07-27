@@ -1,0 +1,9 @@
+form:
+    path: /form
+    defaults: { _controller: src.ui.action.input_action}
+    methods: [GET, POST]
+
+results:
+    path: /results
+    defaults: { _controller: src.ui.action.input_action}
+    methods: [GET, POST]
